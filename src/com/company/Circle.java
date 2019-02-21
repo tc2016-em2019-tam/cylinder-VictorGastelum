@@ -5,13 +5,13 @@ public class Circle {
     private String color;
 
     public Circle() {
-        this.radius=1.0;
-        this.color="Red";
+        this.radius = 1.0;
+        this.color = "red";
     }
 
     public Circle(double radius) {
         this.radius = radius;
-        this.color = "Red";
+        this.color = "red";
     }
 
     public Circle(double radius, String color) {
@@ -19,15 +19,25 @@ public class Circle {
         this.color = color;
     }
 
-    public double getRadius() { return radius; }
+    public double getRadius() {
+        return this.radius;
+    }
 
-    public void setRadius(double radius) { this.radius = radius; }
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
-    public String getColor() { return color; }
+    public String getColor() {
+        return this.color;
+    }
 
-    public void setColor(String color) { this.color = color; }
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-    public double getArea(){ return Math.PI*(Math.pow(this.radius,2)); }
+    public double getArea() {
+        return Math.PI * this.radius * this.radius;
+    }
 
     @Override
     public String toString() {
